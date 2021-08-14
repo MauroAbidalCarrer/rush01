@@ -22,7 +22,7 @@ game	init_game(char *input)
 	return (start);
 }
 
-int *init_input_to_tab(int *tab)
+int	*init_input_to_tab(int *tab)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ int *init_input_to_tab(int *tab)
 	return (tab);
 }
 
-void init_view_points(char *input, int view_points[][4])
+void	init_view_points(char *input, int view_points[][4])
 {
 	int	input_pov[16];
 	int	index_pov;
@@ -54,7 +54,7 @@ void init_view_points(char *input, int view_points[][4])
 	}
 }
 
-int *ft_atoi(char *str, int *res)
+int	*ft_atoi(char *str, int *res)
 {
 	int	i;
 	int	j;

@@ -19,7 +19,7 @@ int check_input(char* input);//returns 1 if inpu is correct, 0 otherwise
 
 
 //										initialize game struct.
-//game init_game(char* input);
+game init_game(char* input);
 //returns the game struct with the view\_points initialized to the input and the grid with every cell initialized to 0
 int	*init_input_to_tab(int *tab);
 void	init_view_points(char *input, int view_points[][4]);
@@ -31,7 +31,7 @@ int solve(int x, int y, game *g);
 
 
 //										print game
-//void print_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
+void print_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
 
 
 //										usefull
