@@ -6,6 +6,10 @@ typedef struct game_s
 {
 	int grid[4][4];
 	int view_points[4][4];
+		/*
+		first index corresponds to the side:0=up 1=down 2=left 3=right
+		second index corresponds to index each side
+		*/
 } game;
 
 
@@ -19,7 +23,7 @@ game init_game(char* input);
 
 
 //										solve game.
-int solve(game *g);
+int solve(int x, int y, game *g);
 //takes the adrres of the game struct, modifies it and returns 1 ifthe game has been solved, 0 otherwise
 
 
