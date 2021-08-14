@@ -19,7 +19,7 @@ int check_input(char* input);//returns 1 if inpu is correct, 0 otherwise
 
 
 //										solve game.
-//int solve(game *g);
+int solve(int x, int y, game *g);
 //takes the adrres of the game struct, modifies it and returns 1 ifthe game has been solved, 0 otherwise
 
 
