@@ -1,12 +1,13 @@
 # rush01
 
-overview:
-1:check inputs If input is incorrect print Error
-2:initialize game struct
-3:solve game
-4:IF could not solve game print Error ELSE print solution
+overview:\n
+1:check inputs If input is incorrect print Error\n
+2:initialize game struct\n
+3:solve game\n
+4:IF could not solve game print Error ELSE print solution\n
 
 implementation overview:
+```
 struct game
 {
 	int grid[4][4];
@@ -22,16 +23,15 @@ struct game
 	*/
 }
 
-int check\_input(char\* input);//returns 1 if inpu is correct, 0 otherwise
+int check_input(char* input);//returns 1 if inpu is correct, 0 otherwise
 
-game init\_game(char\* input);
+game init_game(char\* input);
 //returns the game struct with the view\_points initialized to the input and the grid with every cell initialized to 0
 
-int solve(game \*g);
+int solve(game *g);
 //takes the adrres of the game struct, modifies it and returns 1 ifthe game has been solved, 0 otherwise
 
-void print\_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
-
+void print_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
 main(int ac, char **av)
 {
 	game g;
@@ -50,3 +50,4 @@ main(int ac, char **av)
 	print_game(g);
 	return (0);
 }
+```
