@@ -32,7 +32,7 @@ int solve(game *g);
 //takes the adrres of the game struct, modifies it and returns 1 ifthe game has been solved, 0 otherwise
 
 void print_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
-main(int ac, char **av)
+int main(int ac, char **av)
 {
 	game g;
 
