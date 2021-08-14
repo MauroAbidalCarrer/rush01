@@ -10,7 +10,7 @@ implementation overview:
 ```
 struct game
 {
-	int grid[4][4];
+	int grid[4][4];//le premier index correspond au colonnes(x), le deuxieme au lignes(y)
 	int view_ponits[4][4];
 	/*
 		first index corresponds to the side:0=up 1=down 2=left 3=right

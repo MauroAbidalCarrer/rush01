@@ -31,6 +31,5 @@ void print_game(game g);//prints the gameon the command line, gets called if the
 int ft_strlen(char *str);
 void ft_putchar(char c);
 void ft_putstr(char *str);
-
-void test();
 #endif
+
