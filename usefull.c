@@ -10,7 +10,7 @@ int ft_strlen(char *str)
 	return (i);
 }
 
-void ft_putchar(car c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
