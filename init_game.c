@@ -5,7 +5,7 @@ game	init_game(char *input)
 {
 	int	i;
 	int	j;
-	int	input_to_tab[16];
+	int	input_to_tab[NBR_CASE];
 	game	start;
 
 	i = -1;
@@ -27,14 +27,14 @@ int	*init_input_to_tab(int *tab)
 	int	i;
 
 	i = -1;
-	while (++i < 16)
+	while (++i < NBR_CASE)
 		tab[i] = 0;
 	return (tab);
 }
 
-void	init_view_points(char *input, int view_points[][4])
+void	init_view_points(char *input, int view_points[][GAME_SIZE])
 {
-	int	input_pov[16];
+	int	input_pov[NBR_CASE];
 	int	index_pov;
 	int	i;
 	int	j;

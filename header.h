@@ -13,6 +13,7 @@ typedef struct game_s
 } game;
 
 #define GAME_SIZE 4
+#define NBR_CASE GAME_SIZE * GAME_SIZE
 
 //										check inputs
 int check_input(char* input);//returns 1 if inpu is correct, 0 otherwise
