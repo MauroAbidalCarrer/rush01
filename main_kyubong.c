@@ -41,7 +41,7 @@ int	check_input(char *input)
 			if (!is_number(input[i]))
 				return (0);
 			//if more than 4 returns 0;
-			if ((input[i] - 48) > 4)
+			if ((input[i] - 48) > 4 || (input[i] - 48) < 1)
 				return (0);
 		}
 		/* if impair && not space returns 0 */
