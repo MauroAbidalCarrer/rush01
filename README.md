@@ -1,10 +1,10 @@
 # rush01
 
-overview:
-1:check inputs If input is incorrect print Error
-2:initialize game struct
-3:solve game
-4:IF could not solve game print Error ELSE print solution
+overview:\n
+1:check inputs If input is incorrect print Error\n
+2:initialize game struct\n
+3:solve game\n
+4:IF could not solve game print Error ELSE print solution\n
 
 implementation overview:
 ```
