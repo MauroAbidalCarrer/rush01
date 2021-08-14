@@ -6,6 +6,10 @@ typedef struct game_s
 {
 	int grid[4][4];
 	int view_points[4][4];
+		/*
+		first index corresponds to the side: 0 = up 1 = down 2 = left 3 = right
+		second index corresponds to index each side
+		*/
 } game;
 
 #define GAME_SIZE 4
@@ -36,4 +40,3 @@ void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		is_number(char c); 
 #endif
-
