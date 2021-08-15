@@ -6,7 +6,7 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 14:52:41 by kychoi           ###   ########.fr       */
+/*   Updated: 2021/08/15 15:54:13 by maabidal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@
 # include <unistd.h>
 typedef struct game_s
 {
-	int	grid[4][4];
-	int	view_points[4][4];
+	int	**grid;
+	int	**view_points;
+	int	size;
 }	t_game;
 
 int		check_input(char *input);
