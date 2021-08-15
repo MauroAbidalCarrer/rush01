@@ -6,13 +6,16 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/08/15 15:54:13 by maabidal         ###   ########.fr       */
+=======
+/*   Updated: 2021/08/15 16:52:42 by hmechich         ###   ########.fr       */
+>>>>>>> 62ff194819df52ea8ee0291c31c4ad41b8ac259a
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HEADER_H
 # define	HEADER_H
-# define GAME_SIZE 4
 
 # include <unistd.h>
 typedef struct game_s
@@ -23,14 +26,11 @@ typedef struct game_s
 }	t_game;
 
 int		check_input(char *input);
-t_game	init_game(char *input);
-int		*init_input_to_tab(int *tab);
-void	init_view_points(char *input, int view_points[][4]);
-int		*ft_atoi(char *str, int *res);
+t_game	init_game(char *input, int size);
 /*solve game.*/
 int		solve(int x, int y, t_game *g);
 /*print game*/
-void	print_game(t_game g);
+void	print_game(t_game g, int size);
 void	print_game_with_view_points(t_game g);
 /*usefull*/
 int		ft_strlen(char *str);
