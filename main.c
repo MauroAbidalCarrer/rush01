@@ -6,7 +6,7 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:17:34 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 17:36:00 by kychoi           ###   ########.fr       */
+/*   Updated: 2021/08/15 20:08:49 by maabidal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ int	main(int ac, char **av)
 		ft_putstr("Error\n");
 		return (1);
 	}
-	print_game(g);
+	print_game(g, size);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:17:00 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 16:56:35 by hmechich         ###   ########.fr       */
+/*   Updated: 2021/08/15 20:11:22 by maabidal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ t_game	init_game(char *av, int size)
 	t_game	g;
 	int		x;
 	int		y;
-	int		index;
 
 	g.grid = malloc(size * sizeof(int *));
 	g.view_points = malloc(size * sizeof(int *));
@@ -34,9 +33,9 @@ t_game	init_game(char *av, int size)
 		while (++y < size)
 		{
 			g.grid[x][y] = 0;
-			index = x * (size * 2) + y * 2;
-			g.view_points[x][y] = av[index] - '0';
+			g.view_points[x][y] = av[x * (size * 2) + y * 2] - '0';
 		}
 	}
+	g.size = size;
 	return (g);
 }

@@ -6,15 +6,7 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/08/15 17:38:32 by kychoi           ###   ########.fr       */
-=======
-<<<<<<< HEAD
-/*   Updated: 2021/08/15 15:54:13 by maabidal         ###   ########.fr       */
-=======
-/*   Updated: 2021/08/15 16:52:42 by hmechich         ###   ########.fr       */
->>>>>>> 62ff194819df52ea8ee0291c31c4ad41b8ac259a
->>>>>>> ccf7455652c2177681223769406dcdab56c97855
+/*   Updated: 2021/08/15 20:08:27 by maabidal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +14,7 @@
 # define	HEADER_H
 
 # include <unistd.h>
+# include <stdlib.h>
 typedef struct game_s
 {
 	int	**grid;

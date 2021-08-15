@@ -6,10 +6,9 @@
 /*   By: maabidal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 16:30:49 by maabidal          #+#    #+#             */
-/*   Updated: 2021/08/15 16:30:52 by maabidal         ###   ########.fr       */
+/*   Updated: 2021/08/15 20:12:31 by maabidal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "header.h"
 
@@ -47,6 +46,7 @@ int	can_put_on_line(int x, int y, int val, t_game *g)
 
 	is_leg = 1;
 	s = g->size;
+	i = 0;
 	while (++i < s)
 		is_leg *= g->grid[(x + i) % s][y] != val;
 	g->grid[x][y] = val;
@@ -119,13 +119,14 @@ int	solve(int x, int y, t_game *g)
 	int	val;
 	int	s;
 
-	size = g->size
+	s = g->size;
 	val = 1;
-	while (val < s)
+	while (val <= s)
 	{
 		if (can_put_on_line(x, y, val, g) && can_put_on_columm(x, y, val, g))
 		{
-			if ((x == s - 1 && y == s - 1) || solve((x + 1) % s, y + (x + 1) / s, g))
+			if ((x == s - 1 && y == s - 1)
+				|| solve((x + 1) % s, y + (x + 1) / s, g))
 				return (1);
 		}
 		val++;
