@@ -6,7 +6,7 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 14:52:41 by kychoi           ###   ########.fr       */
+/*   Updated: 2021/08/15 16:19:44 by hmechich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,11 @@ typedef struct game_s
 }	t_game;
 
 int		check_input(char *input);
-t_game	init_game(char *input);
-int		*init_input_to_tab(int *tab);
-void	init_view_points(char *input, int view_points[][4]);
-int		*ft_atoi(char *str, int *res);
+t_game	init_game(char *input, int size);
 /*solve game.*/
 int		solve(int x, int y, t_game *g);
 /*print game*/
-void	print_game(t_game g);
+void	print_game(t_game g, int size);
 void	print_game_with_view_points(t_game g);
 /*usefull*/
 int		ft_strlen(char *str);
