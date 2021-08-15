@@ -6,15 +6,15 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 12:45:53 by kychoi           ###   ########.fr       */
+/*   Updated: 2021/08/15 14:52:41 by kychoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HEADER_H
-#define	HEADER_H
-#define GAME_SIZE 4
+# define	HEADER_H
+# define GAME_SIZE 4
 
-#include <unistd.h>
+# include <unistd.h>
 typedef struct game_s
 {
 	int	grid[4][4];
