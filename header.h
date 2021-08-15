@@ -1,43 +1,39 @@
-#ifndef HEADERFILE_H
-#define HEADERFILE_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   header.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
+/*   Updated: 2021/08/15 14:52:41 by kychoi           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include<unistd.h>
+#ifndef HEADER_H
+# define	HEADER_H
+# define GAME_SIZE 4
+
+# include <unistd.h>
 typedef struct game_s
 {
-	int grid[4][4];
-	int view_points[4][4];
-		/*
-		first index corresponds to the side: 0 = up 1 = down 2 = left 3 = right
-		second index corresponds to index each side
-		*/
-} game;
+	int	grid[4][4];
+	int	view_points[4][4];
+}	t_game;
 
-#define GAME_SIZE 4
-#define NBR_CASE GAME_SIZE * GAME_SIZE
-
-//										check inputs
-int check_input(char* input);//returns 1 if inpu is correct, 0 otherwise
-
-
-//										initialize game struct.
-game init_game(char* input);
-//returns the game struct with the view\_points initialized to the input and the grid with every cell initialized to 0
-int	*init_input_to_tab(int *tab);
+int		check_input(char *input);
+t_game	init_game(char *input);
+int		*init_input_to_tab(int *tab);
 void	init_view_points(char *input, int view_points[][4]);
-int	*ft_atoi(char *str, int *res);
-
-//										solve game.
-int solve(int x, int y, game *g);
-//takes the adrres of the game struct, modifies it and returns 1 ifthe game has been solved, 0 otherwise
-
-
-//										print game
-void print_game(game g);//prints the gameon the command line, gets called if the previous funcion returns 1.
-void print_game_with_view_points(game g);
-
-//										usefull
+int		*ft_atoi(char *str, int *res);
+/*solve game.*/
+int		solve(int x, int y, t_game *g);
+/*print game*/
+void	print_game(t_game g);
+void	print_game_with_view_points(t_game g);
+/*usefull*/
 int		ft_strlen(char *str);
+int		is_number(char c);
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
-int		is_number(char c); 
 #endif

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_game.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/15 12:17:05 by kychoi            #+#    #+#             */
+/*   Updated: 2021/08/15 12:46:57 by kychoi           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "header.h"
 
-void print_game(game g)
+void	print_game(t_game g)
 {
 	int	x;
 	int	y;
@@ -17,44 +29,4 @@ void print_game(game g)
 		}
 		ft_putchar('\n');
 	}
-}
-
-void print_game_with_view_points(game g)
-{
-	int	x;
-	int	y;
-
-	y = -1;
-	ft_putchar(' ');
-	ft_putchar(' ');
-	while (++y < 4)
-	{
-		ft_putchar('0' + g.view_points[0][y]);
-		ft_putchar(' ');
-	}
-	ft_putchar('\n');
-	y = -1;
-	while (++y < 4)
-	{
-		ft_putchar('0' + g.view_points[2][y]);
-		ft_putchar(' ');
-		x = -1;
-		while (++x < 4)
-		{
-			ft_putchar('0' + g.grid[x][y]);
-			ft_putchar(' ');
-		}
-		ft_putchar('0' + g.view_points[3][y]);
-		ft_putchar('\n');
-	}
-	ft_putchar(' ');
-	ft_putchar(' ');
-	y = -1;
-	while (++y < 4)
-	{
-		ft_putchar('0' + g.view_points[1][y]);
-		ft_putchar(' ');
-	}
-	ft_putchar('\n');
-	ft_putchar('\n');
 }
