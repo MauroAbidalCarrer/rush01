@@ -6,13 +6,12 @@
 /*   By: kychoi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 12:41:41 by kychoi            #+#    #+#             */
-/*   Updated: 2021/08/15 16:44:05 by hmechich         ###   ########.fr       */
+/*   Updated: 2021/08/15 16:52:42 by hmechich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HEADER_H
 # define	HEADER_H
-# define GAME_SIZE 4
 
 # include <unistd.h>
 typedef struct game_s
